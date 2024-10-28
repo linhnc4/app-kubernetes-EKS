@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="isNew">New Paint Creator</ion-title>
+    <ion-title *ngIf="!isNew">Paint Editor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="paint">
+    <app-paint-graphic [paint]="paint"></app-paint-graphic>
+
+    <form (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label>Paint Title</ion-label>
+        <ion-input type="text" [(ngModel)]="paint.title" name="title"></ion-input>
+      </ion-item>
+
+      <ion-item *ngFor="let ingredient of paint.recipe; let i = index;  trackBy: customTrackBy">
+        <ion-label>Ingredient Name</ion-label>
+        <ion-input [(ngModel)]="paint.recipe[i].name" [name]="'Ingredient Title'+i"></ion-input>
+
+        <ion-label>Number of Parts</ion-label>
+        <ion-input type="number" [(ngModel)]="paint.recipe[i].parts" [name]="'Ingredient Parts'+i"></ion-input>
+
+        <ion-label>Color</ion-label>
+        <ion-input type="text" [(ngModel)]="paint.recipe[i].color" [name]="'Ingredient Color'+i"></ion-input>
+
+        <ion-button (click)="removeIngredient(i)" [disabled]="i==0 && paint.recipe.length==1">Remove</ion-button><br />
+        <ion-button (click)="addIngredient(i)" [disabled]="paint.recipe.length==5">ADD</ion-button><br />
+
+      </ion-item>
+
+      <ion-button 
+        [disabled]="!auth.can('delete:paints')"
+        (click)="deleteClicked()">Delete</ion-button><br />
+      <ion-button (click)="closeModal()">Cancel</ion-button>
+      <ion-button 
+        [disabled]="!auth.can('patch:paints') || !auth.can('post:paints')"
+        (click)="saveClicked()">Save</ion-button>
+
+    </form>
+</ion-content>
