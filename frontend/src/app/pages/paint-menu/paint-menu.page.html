@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar style="text-align: center">
+    <ion-title><b>Uda-Spice Latte</b> Paint</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="paints && paints.items">
+<div style="display: flex; justify-content: center; padding-top: 20px;">
+    <ion-card
+     style="align-items: center; display: flex; flex-direction: column; cursor: pointer;" 
+     *ngFor="let paint of Object.keys(paints.items)"
+     (click)="openForm(paints.items[paint])">
+        <ion-card-header>
+          <ion-card-title>{{paints.items[paint].title}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+            <app-paint-graphic [paint]="paints.items[paint]"></app-paint-graphic>
+        </ion-card-content>
+      </ion-card>
+    <ion-card
+     style="opacity: .7; align-items: center; display: flex; flex-direction: column; cursor: pointer;" 
+     *ngIf="auth.can('post:paints')"
+     (click)="openForm()">
+        <ion-card-header>
+          <ion-card-title>Create paint</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="color:grey; font-size: 256%;">
+            <ion-icon name="add-circle"></ion-icon>
+        </ion-card-content>
+      </ion-card>
+</div>
+</ion-content>
