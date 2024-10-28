@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "aebc114b-72e4-4fad-b3be-46aac1c13c5f",
+		"name": "paint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29759690"
+	},
+	"item": [
+		{
+			"name": "sales",
+			"item": [
+				{
+					"name": "/paints",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6InNhbGVzLWdldC1wYWludHMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsic2FsZXMiXSwicGVybWlzc2lvbnMiOlsiZ2V0OnBhaW50cyJdLCJpYXQiOjE3MzAwNjIwMTQsImV4cCI6MTczMDE0ODQxNH0.LHGLAvqGmqh0dUJr36nioOFTFHc-aYHwDBxKFUTZ7f4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/paints",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/paints-detail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6InNhbGVzLWdldC1wYWludHMtZGV0YWlsIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsic2FsZXMiXSwicGVybWlzc2lvbnMiOlsiZ2V0OnBhaW50cy1kZXRhaWwiXSwiaWF0IjoxNzMwMDYyMDk2LCJleHAiOjE3MzAxNDg0OTZ9.YIvOz1_P0ruS0Q2UhFJpIWzRN7j4Npi-seiZUgCzK30",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/paints-detail",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints-detail"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik4wTkNOVEEzTWpaQ1FUa3lRMEl6TmtORk0wWXhRVFUwT1RFMFFVVkNSRUpDT1RBME1EUXpOUSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY3MTQ4MTQ0MTcwNjk3MTI4OTMiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly91ZGFjaXR5LWZzbmQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU2MDg5MDE2MCwiZXhwIjoxNTYwODk3MzYwLCJhenAiOiJPSjVwQk9ZSURFa09FVFVmUWo1ajdsSDZFTFcwMkd1MCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.j9ocW47_exQOkEa10ffh8eijGvrIMxnGRzCmbrXnfaN_8ULsgA7AnWYMtvP8RmPWvT9n8sReWnFuJajUHBUbnBO2GuJ4aM3-WDUBeJT0X_mpGUWs4lxaNTbIkWdiWPTsEiRnP3wT-dU_v3Olw2PB4UMajMIjSH-IdF2Y1CiJIOaM0gV44RGZRyRvj6C2_mOkMfoXxzw-HrVvTRCo1NcUPea5Bs04POni7azx-B7FstP_HLm0dEbbge4XbmovHwlIXknIoI8PbuGXeLBqE2hv8fErKFBuIykxzK0nErH5zSPCrkM-_9smb8TLGAH-E5j1KQb6SHDKtcV_QHnsUYFuXA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "manager",
+			"item": [
+				{
+					"name": "/paints",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6Im1hbmFnZXItZ2V0LXBhaW50cyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsibWFuYWdlciJdLCJwZXJtaXNzaW9ucyI6WyJnZXQ6cGFpbnRzIl0sImlhdCI6MTczMDA2MjE5MSwiZXhwIjoxNzMwMTQ4NTkxfQ.fsrr532zp5tr75syYtS4XdR8YF0EjFiAmLHycvblbiw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/paints",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/paints-detail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6Im1hbmFnZXItZ2V0LXBhaW50cy1kZXRhaWwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsibWFuYWdlciJdLCJwZXJtaXNzaW9ucyI6WyJnZXQ6cGFpbnRzLWRldGFpbCJdLCJpYXQiOjE3MzAwNjIxNDksImV4cCI6MTczMDE0ODU0OX0.EnREiTMJK6JL6uNUHMYsS8uBIy0_7TmGJW7VLyaO-XU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/paints-detail",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/paints",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6Im1hbmFnZXItcG9zdC1wYWludHMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsibWFuYWdlciJdLCJwZXJtaXNzaW9ucyI6WyJwb3N0OnBhaW50cyJdLCJpYXQiOjE3MzAwNjIyNTUsImV4cCI6MTczMDE0ODY1NX0.9QBCgeSOtEn8bdv-qgnku0H_GiNQpoO8c7EQ1W3o3Bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Sơn bóng\",\n    \"recipe\": {\n        \"binder\": \"binder\",\n        \"pigment\": \"pigment\",\n        \"extender\": \"extender\",\n        \"solvent\": \"solvent\",\n        \"additives\": \"additives\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/paints",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/paints/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6Im1hbmFnZXItcGF0Y2gtcGFpbnRzIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsibWFuYWdlciJdLCJwZXJtaXNzaW9ucyI6WyJwYXRjaDpwYWludHMiXSwiaWF0IjoxNzMwMDYyMzg5LCJleHAiOjE3MzAxNDg3ODl9.dSwfY1Lb15TUvNkZGZQcrjW1OAflzdCTF9rh9ipKxkk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Sơn bóng ngoài\",\n    \"recipe\": {\n        \"binder\": \"binder 1\",\n        \"pigment\": \"pigment 2\",\n        \"extender\": \"extender\",\n        \"solvent\": \"solvent\",\n        \"additives\": \"additives\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/paints/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/paints/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6Im1hbmFnZXItZGVsZXRlLXBhaW50cyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3N0dWRlbnQtbGluaG5jNC51cy5hdXRoMC5jb20iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMjEyMzQ1Njc4OTAiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly9zdHVkZW50LWxpbmhuYzQudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sIm5hbWUiOiJsaW5obmM0Iiwicm9sZXMiOlsibWFuYWdlciJdLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6cGFpbnRzIl0sImlhdCI6MTczMDA2MjQ4NSwiZXhwIjoxNzMwMTQ4ODg1fQ.o88NrkxcDUzR1a2NbcLUnJNjTASng2Jlf28vYmBS2Bw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/paints/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paints",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik4wTkNOVEEzTWpaQ1FUa3lRMEl6TmtORk0wWXhRVFUwT1RFMFFVVkNSRUpDT1RBME1EUXpOUSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHktZnNuZC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDY3MTQ4MTQ0MTcwNjk3MTI4OTMiLCJhdWQiOlsiZGV2IiwiaHR0cHM6Ly91ZGFjaXR5LWZzbmQuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU2MDg4OTU5NiwiZXhwIjoxNTYwODk2Nzk2LCJhenAiOiJPSjVwQk9ZSURFa09FVFVmUWo1ajdsSDZFTFcwMkd1MCIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Qk-5FC2X_RUkK00WKARYCKw_877XFuaT5ND3f3ObD9Ly1e1GMfJXhi3McV12binGGCw6x241erIjGB0t8WbWdU3bYpIVD1klZ64DVLQ8Q2LQ2NzB3eFEOgGLL85az1jIDbRiuATIRbbBOWILPJ6h6KR9L5hExklf2zuj3Bnwm7zMRmVpIJmjrUt4bWjtTOguOwJ0IVQsk4PDjGxzwfrUWFCFNDqN_u15JNLxeH21C-QvCpHs3D4Aodeh1qFUuWHfK_Gyfu91AitXPTVZRX9eZbUOVkGT3JMn4sKn9oGaKFTx2E-Y4DmoECG0uWImbX_wiRjx4aTeo7Q7hKSReMToPA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	]
+}

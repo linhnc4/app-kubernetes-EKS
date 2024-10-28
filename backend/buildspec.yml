@@ -1,0 +1,16 @@
+version: 0.2
+
+env:
+  parameter-store:
+    JWT_SECRET: "JWT_SECRET"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo "Building the application..."
+      - echo "JWT_SECRET is $JWT_SECRET"
