@@ -86,3 +86,9 @@ The deployed application is available on Heroku and can be accessed at
 ```
 https://paint-linhnc4.herokuapp.com/
 ```
+
+## ELB url 
+
+```
+https://aws.amazon.com/paint-linhnc4
+```
